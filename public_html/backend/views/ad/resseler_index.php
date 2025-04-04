@@ -287,6 +287,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <script>
     $(document).ready(function () {
         $("#adsearch-date1").persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",

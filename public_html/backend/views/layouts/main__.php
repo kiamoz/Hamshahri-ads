@@ -454,6 +454,11 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
         var date2 = '<?= $_GET['Messages_serach']['date2'] ?>';
 
         $('.example1').persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
 
             initialValue: false,
             initialValueType: "persian",
@@ -475,6 +480,11 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
 
 <?php if ($patchx == 'messagse/create' or $patchx == 'messagse/update') { ?>
         $('.example1').persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
            
             initialValueType: "persian",
             calendarType: "persian",
@@ -487,6 +497,11 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
 
 
     $('.inline-example').persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
         inline: true,
         altField: '#inlineExampleAlt',
         altFormat: 'LLLL',

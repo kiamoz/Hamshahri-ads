@@ -652,6 +652,11 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
 //            }
 //            );
         $(".clone_date").persianDatepicker({
+            calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",

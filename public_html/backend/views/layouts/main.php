@@ -427,6 +427,11 @@ AppAsset::register($this);
 
             $(document).ready(function () {
                 $("#user-tarikh_gharardad,.dd-date").persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
                     initialValue: false,
                     initialValueType: "persian",
                     calendarType: "persian",
@@ -450,6 +455,11 @@ AppAsset::register($this);
                 $('.first_date').after($('<input value="' + date2 + '" name="' + $('.first_date').attr('data-name') + '" class="example1 form-control"  autocomplete="off" />')).ready(function () {
 
                     $('.example1').persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
 
                         initialValue: false,
                         initialValueType: "persian",
@@ -468,6 +478,11 @@ AppAsset::register($this);
                 $('.first_date').after($('<input value="' + date2 + '" name="' + $('.first_date').attr('data-name') + '" class="example1 form-control"  autocomplete="off" />')).ready(function () {
 
                     $('.example1').persianDatepicker({
+ calendar:{
+        persian: {
+            leapYearMode: 'astronomical'
+        }
+    },
 
                         initialValue: false,
                         initialValueType: "persian",
