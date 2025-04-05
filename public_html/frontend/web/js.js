@@ -338,6 +338,11 @@ jQuery(function ($) {
 
 
         $("#ad-date_publish2").persianDatepicker({
+            calendar:{
+                persian: {
+                    leapYearMode: 'astronomical' 
+                }
+            },
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",
@@ -350,6 +355,11 @@ jQuery(function ($) {
         );
 
         var to = $("#ad-date").persianDatepicker({
+            calendar:{
+                persian: {
+                    leapYearMode: 'astronomical' 
+                }
+            },
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",
@@ -367,6 +377,11 @@ jQuery(function ($) {
 
 
         $("#ad-date_publish").persianDatepicker({
+            calendar:{
+                persian: {
+                    leapYearMode: 'astronomical' 
+                }
+            },
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",

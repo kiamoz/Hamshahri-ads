@@ -460,6 +460,7 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
         }
     },
 
+
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",
@@ -485,6 +486,7 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
             leapYearMode: 'astronomical'
         }
     },
+
            
             initialValueType: "persian",
             calendarType: "persian",
@@ -502,6 +504,7 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
             leapYearMode: 'astronomical'
         }
     },
+
         inline: true,
         altField: '#inlineExampleAlt',
         altFormat: 'LLLL',

@@ -618,8 +618,8 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
     <!-- Theme switcher -->
     <script src="../../backend/web/upload_js/demo-ui.js"></script>
     <script type="text/javascript" src="../../backend/web/theme/widgets/theme-switcher/themeswitcher.js"></script>
-    <script type="text/javascript" src="/js.js?ver=<?= rand(1, 2299992) ?>"></script>
-    <script src="/shop/shopjs.js?ver=<?= rand(1, 99999) ?>"></script>
+    <script type="text/javascript" src="/js.js?ver=31"></script>
+    <script src="/shop/shopjs.js?ver=333"></script>
     <script>
         $('.maskm').maskMoney({precision: '0'});
     </script>
@@ -654,7 +654,7 @@ $patchx = Yii::$app->controller->id . "/" . Yii::$app->controller->action->id;
         $(".clone_date").persianDatepicker({
             calendar:{
         persian: {
-            leapYearMode: 'astronomical'
+            leapYearMode: 'astronomical' 
         }
     },
             initialValue: false,

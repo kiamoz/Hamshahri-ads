@@ -466,6 +466,7 @@ $dataProvider6 = clone $dataProvider;
             leapYearMode: 'astronomical'
         }
     },
+
             initialValue: false,
             initialValueType: "persian",
             calendarType: "persian",
