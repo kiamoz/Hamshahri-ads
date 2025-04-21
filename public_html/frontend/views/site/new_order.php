@@ -260,10 +260,10 @@ $form = ActiveForm::begin();
                 
                // echo \common\models\DiscountItem::find()->where(['not like', 'name', '%'])->where(['>', 'discount', 0])->andWhere(['cat_id' => 1])->createCommand()->getRawSql();
 
-                $data_disc_arr_ = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['like', 'name', '%'])->andWhere(['>', 'discount', 0])->andWhere(['cat_id' => 1])->all(), 'id', 'name');
+                $data_disc_arr_ = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['like', 'name', '%'])->andWhere(['>', 'discount', 0])->andWhere(['cat_id' => 1])->orderBy(['id'=>SORT_DESC])->all(), 'id', 'name');
 
-                $data_disc_arr_2 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['>', 'discount', 0])->andWhere(['cat_id' => 2])->all(), 'id', 'name');
-                $data_disc_arr_3 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->andWhere(['type' => 1])->all(), 'id', 'name');
+                $data_disc_arr_2 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['>', 'discount', 0])->andWhere(['cat_id' => 2])->orderBy(['id'=>SORT_DESC])->all(), 'id', 'name');
+                $data_disc_arr_3 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->andWhere(['type' => 1])->orderBy(['id'=>SORT_DESC]), 'id', 'name')->all();
 
                 foreach ($a_h_d as $a) {
                     
@@ -709,8 +709,7 @@ $form = ActiveForm::begin();
             <div class="hide-h">
                 <div class="clearfix" style=""></div>
                 <?php
-// echo "disc";
-// print_r($discount_1);
+//echo "disc"; print_r($data_disc_arr_);
 //  echo "<hr>";
 // print_r($discount_2);
 // echo "<hr>";
