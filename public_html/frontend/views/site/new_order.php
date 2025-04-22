@@ -263,7 +263,7 @@ $form = ActiveForm::begin();
                 $data_disc_arr_ = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['like', 'name', '%'])->andWhere(['>', 'discount', 0])->andWhere(['cat_id' => 1])->orderBy(['id'=>SORT_DESC])->all(), 'id', 'name');
 
                 $data_disc_arr_2 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->where(['>', 'discount', 0])->andWhere(['cat_id' => 2])->orderBy(['id'=>SORT_DESC])->all(), 'id', 'name');
-                $data_disc_arr_3 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->andWhere(['type' => 1])->orderBy(['id'=>SORT_DESC]), 'id', 'name')->all();
+                $data_disc_arr_3 = yii\helpers\ArrayHelper::map(\common\models\DiscountItem::find()->andWhere(['type' => 1])->orderBy(['id'=>SORT_DESC])->all(), 'id', 'name');
 
                 foreach ($a_h_d as $a) {
                     
